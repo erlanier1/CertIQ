@@ -34,13 +34,19 @@ export const certs = [
     ]
   },
   {
-    id: 'cipp',
-    name: 'CIPP',
-    fullName: 'Certified Information Privacy Professional',
+    id: 'cipp-us',
+    name: 'CIPP/US',
+    fullName: 'Certified Information Privacy Professional/United States',
     issuer: 'IAPP',
     area: 'Privacy',
     ready: false,
-    domains: []
+    domains: [
+      { id: 'd1', name: 'Introduction to the U.S. privacy environment' },
+      { id: 'd2', name: 'Limits on private-sector collection and use of data' },
+      { id: 'd3', name: 'Government and court access to private-sector information' },
+      { id: 'd4', name: 'Workplace privacy' },
+      { id: 'd5', name: 'State privacy laws' }
+    ]
   }
 ]
 

@@ -1,7 +1,7 @@
 # CertIQ
 
 ## What it is
-CertIQ helps people prepare for compliance, privacy, security and AI-governance certifications: CISM, CISA, AIGP, CIPP and more.
+CertIQ helps people prepare for compliance, privacy, security and AI-governance certifications: CISM, CISA, AIGP, CIPP/US and more.
 
 ## Who it's for
 - Students
@@ -20,10 +20,10 @@ A website that can be installed as an app (PWA) and works offline after the firs
 ## Status
 | Certification | Domains | Review content | Questions |
 |---|---|---|---|
-| CISM | ✅ | ✅ | 12 (starter set) |
+| CISM | ✅ | ✅ | 44 (11 per domain) |
 | CISA | ✅ | ⏳ | ⏳ |
 | AIGP | ✅ | ⏳ | ⏳ |
-| CIPP | ⏳ (pick a variant: US, E, C…) | ⏳ | ⏳ |
+| CIPP/US | ✅ | ⏳ | ⏳ |
 
 ## Later list (not now)
 Add new ideas here so they don't derail v1.
