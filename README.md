@@ -21,9 +21,9 @@ A website that can be installed as an app (PWA) and works offline after the firs
 | Certification | Domains | Review content | Questions |
 |---|---|---|---|
 | CISM | ✅ | ✅ | 44 (11 per domain) |
-| CISA | ✅ | ⏳ | ⏳ |
-| AIGP | ✅ | ⏳ | ⏳ |
-| CIPP/US | ✅ | ⏳ | ⏳ |
+| CISA | ✅ | ✅ | 30 (6 per domain) |
+| AIGP | ✅ | ✅ | 24 (6 per domain) |
+| CIPP/US | ✅ | ✅ | 30 (6 per domain) |
 
 ## Later list (not now)
 Add new ideas here so they don't derail v1.
@@ -39,4 +39,11 @@ npm run preview  # serve the production build
 
 ## Where content lives
 - `src/data/certs.js`: the list of certifications and their domains
-- `src/data/cism.js`: CISM review notes and questions (copy this pattern for each new cert)
+- `src/data/cism.js`, `cisa.js`, `aigp.js`, `cippus.js`: review notes and questions for each cert
+
+All questions are original practice questions, not official exam items. Have a subject-matter expert review them before wide release.
+
+## Deploy
+The app is a static site. On Vercel or Netlify, import the GitHub repo and use the defaults:
+- Build command: `npm run build`
+- Output folder: `dist`
