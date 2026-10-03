@@ -27,7 +27,7 @@ A website that can be installed as an app (PWA) and works offline after the firs
 
 ## Later list (not now)
 Add new ideas here so they don't derail v1.
--
+- CompTIA Security+ (6th cert, keeps the 2-column grid even)
 
 ## Run it locally
 ```bash
