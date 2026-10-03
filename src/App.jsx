@@ -5,6 +5,8 @@ import CertOverview from './components/CertOverview.jsx'
 import DomainReview from './components/DomainReview.jsx'
 import Quiz from './components/Quiz.jsx'
 import Results from './components/Results.jsx'
+import Legal from './components/Legal.jsx'
+import Footer from './components/Footer.jsx'
 
 export default function App() {
   const [screen, setScreen] = useState({ view: 'home' })
@@ -38,7 +40,9 @@ export default function App() {
           />
         )}
         {screen.view === 'results' && <Results cert={cert} domain={domain} result={screen.result} go={go} />}
+        {['privacy', 'terms', 'disclaimer'].includes(screen.view) && <Legal page={screen.view} go={go} />}
       </main>
+      <Footer go={go} />
     </div>
   )
 }

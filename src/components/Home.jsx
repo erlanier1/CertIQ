@@ -5,7 +5,7 @@ export default function Home({ onPick }) {
     <>
       <section className="hero">
         <h1>Pass your certification with confidence</h1>
-        <p>Review each exam domain, then test yourself. Built for security, audit, privacy and AI governance professionals.</p>
+        <p>Review each exam domain, then test yourself. Built for cybersecurity, audit, privacy and AI governance professionals.</p>
       </section>
       <h2 className="section-title">Choose a certification</h2>
       <div className="grid">
