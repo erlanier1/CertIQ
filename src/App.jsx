@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { getCert } from './data/certs.js'
 import Home from './components/Home.jsx'
+import Landing from './components/Landing.jsx'
 import CertOverview from './components/CertOverview.jsx'
 import DomainReview from './components/DomainReview.jsx'
 import Quiz from './components/Quiz.jsx'
@@ -26,8 +27,12 @@ export default function App() {
           CertIQ
         </button>
       </header>
+      <div className="beta-bar">
+        Beta: practice content is still being reviewed and is not official exam material.
+      </div>
       <main className="content">
-        {screen.view === 'home' && <Home onPick={(certId) => go({ view: 'cert', certId })} />}
+        {screen.view === 'home' && <Landing go={go} />}
+        {screen.view === 'certs' && <Home go={go} onPick={(certId) => go({ view: 'cert', certId })} />}
         {screen.view === 'cert' && <CertOverview cert={cert} go={go} />}
         {screen.view === 'review' && <DomainReview cert={cert} domain={domain} go={go} />}
         {screen.view === 'quiz' && (

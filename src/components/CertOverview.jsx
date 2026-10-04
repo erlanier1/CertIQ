@@ -1,7 +1,7 @@
 export default function CertOverview({ cert, go }) {
   return (
     <>
-      <button className="back" onClick={() => go({ view: 'home' })}>← All certifications</button>
+      <button className="back" onClick={() => go({ view: 'certs' })}>← All certifications</button>
       <h1>{cert.name}</h1>
       <p className="muted">{cert.fullName} · {cert.issuer}</p>
 

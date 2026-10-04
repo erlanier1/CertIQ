@@ -1,13 +1,11 @@
 import { certs } from '../data/certs.js'
 
-export default function Home({ onPick }) {
+export default function Home({ onPick, go }) {
   return (
     <>
-      <section className="hero">
-        <h1>Pass your certification with confidence</h1>
-        <p>Review each exam domain, then test yourself. Built for cybersecurity, audit, privacy and AI governance professionals.</p>
-      </section>
-      <h2 className="section-title">Choose a certification</h2>
+      <button className="back" onClick={() => go({ view: 'home' })}>← Home</button>
+      <h1>Choose a certification</h1>
+      <p className="muted">Pick an exam to review its domains and practice questions.</p>
       <div className="grid">
         {certs.map((c) => (
           <button key={c.id} className="card cert-card" disabled={!c.ready} onClick={() => onPick(c.id)}>
