@@ -1,3 +1,5 @@
+import ReportProblem from './ReportProblem.jsx'
+
 export default function Results({ cert, domain, result, go }) {
   const { answers } = result
   const correct = answers.filter((a) => a.picked === a.answer).length
@@ -45,6 +47,7 @@ export default function Results({ cert, domain, result, go }) {
           <button className="link" onClick={() => go({ view: 'review', certId: cert.id, domainId: a.domainId })}>
             Review this domain →
           </button>
+          <ReportProblem cert={cert} question={a} />
         </div>
       ))}
 

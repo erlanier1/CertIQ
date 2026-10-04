@@ -35,7 +35,7 @@ A website that can be installed as an app (PWA) and works offline after the firs
 
 ## Policies
 Privacy Policy, Terms of Use and Disclaimer live in `src/components/Legal.jsx`. Site name, contact email and policy date live in `src/site.js`.
-- Set `contactEmail` before launch.
+- `contactEmail` receives problem reports and appears on policy pages. Swap in a business address before selling.
 - Update the Privacy Policy **before** adding accounts, payments, analytics or email sign-up.
 - Have a lawyer review the policies before selling CertIQ or charging for it.
 

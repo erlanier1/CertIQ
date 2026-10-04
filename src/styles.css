@@ -90,3 +90,10 @@ h1 { font-size: 1.75rem; margin: 0.25rem 0 0.5rem; }
 .legal h2 { font-size: 1.1rem; margin: 24px 0 8px; }
 .legal ul { padding-left: 20px; }
 .legal a { color: var(--teal); }
+.report-link { display: block; margin: 14px 0 0; font-size: 0.9rem; color: var(--muted); }
+.report-box { margin-top: 14px; padding: 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); display: grid; gap: 8px; }
+.report-option { display: flex; gap: 8px; align-items: center; cursor: pointer; }
+.report-comment { width: 100%; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 8px; }
+.report-box p { margin: 0; }
+.report-thanks { margin-top: 14px; color: var(--good); }
+.report-thanks a { color: var(--teal); }

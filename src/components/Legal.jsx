@@ -15,13 +15,17 @@ function Privacy() {
 
       <h2>The short version</h2>
       <p>
-        {site.name} does not ask for your name, email or any other personal information. There are no accounts, no
-        advertising and no tracking cookies.
+        {site.name} does not ask for your name, email or any other personal information to use the app. There are no
+        accounts, no advertising and no tracking cookies.
       </p>
 
       <h2>What we collect</h2>
       <ul>
-        <li><strong>Information you give us:</strong> none. The app has no sign-up or forms.</li>
+        <li>
+          <strong>Problem reports and emails:</strong> if you use “Report a problem” or email us, we receive your email
+          address and whatever you include. We use it only to fix content and reply to you, and we don’t add you to any
+          mailing list.
+        </li>
         <li><strong>Your quiz answers and scores:</strong> these stay in your browser while you use the app and are not sent to us.</li>
         <li>
           <strong>Basic technical data:</strong> like any website, our hosting provider automatically processes standard

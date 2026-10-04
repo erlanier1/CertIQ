@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ReportProblem from './ReportProblem.jsx'
 
 const shuffle = (arr) => {
   const a = [...arr]
@@ -60,6 +61,8 @@ export default function Quiz({ cert, domain, onDone, go }) {
           </button>
         ))}
       </div>
+
+      <ReportProblem key={q.q} cert={cert} question={q} />
 
       <button className="btn wide" disabled={picked === null} onClick={next}>
         {isLast ? 'See my score' : 'Next question'}
